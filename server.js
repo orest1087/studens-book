@@ -6,6 +6,9 @@ const app = express();
 // Connect to MongoDB (Atlas)
 connectDB();
 
+// Body parse middleware
+app.use(express.json({ extended: false }));
+
 app.get("/", (req, res) => res.send(`API rinning`));
 const PORT = process.env.PORT || 3000;
 
