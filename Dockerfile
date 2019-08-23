@@ -12,4 +12,5 @@ RUN npm install
 RUN cd client && npm install && cd ..
 
 EXPOSE $PORT
-ENTRYPOINT [ "npm", "run", "dev" ]
+ENTRYPOINT [ "bash ]
+# ENTRYPOINT [ "npm", "run", "dev" ]
