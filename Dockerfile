@@ -11,7 +11,7 @@ WORKDIR /var/www
 VOLUME [ "/var/www" ]
 
 RUN npm install
-RUN client/ npm install
+RUN npm install client/
 
 EXPOSE $PORT
 ENTRYPOINT [ "npm", "run dev" ]
