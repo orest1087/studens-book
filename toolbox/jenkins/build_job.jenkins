@@ -11,9 +11,12 @@ pipeline  {
         timestamps()
     }
     stages {
-        stage("Step 1") {
+        stage("Create docker image") {
             steps {
-                echo 'Hello World'
+                echo 'Creating docker image ...'
+                dir('toolbox/docker'){
+                    sh "docker build ."
+                }
             }
         }
     }
