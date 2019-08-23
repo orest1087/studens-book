@@ -14,4 +14,4 @@ RUN npm install
 RUN npm install client/
 
 EXPOSE $PORT
-ENTRYPOINT [ "npm", "run dev" ]
+ENTRYPOINT [ "npm", "run", "dev" ]
