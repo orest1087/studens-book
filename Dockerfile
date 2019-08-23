@@ -2,7 +2,7 @@ FROM node:latest
 
 MAINTAINER macnaer
 
-ENV NODE_ENV=development
+ENV NODE_ENV=prodiction
 ENV PORT=3000
 
 COPY  . /var/www
