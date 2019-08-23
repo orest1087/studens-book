@@ -5,7 +5,7 @@ MAINTAINER macnaer
 ENV NODE_ENV=development
 ENV PORT=3000
 
-COPY . /war/www
+COPY . /var/www
 WORKDIR /var/www
 
 VOLUME [ "/var/www" ]
